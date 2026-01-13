@@ -2,7 +2,7 @@
   <html>
     <head>
       <div>
-        <title>Portfolio - Q2</title>
+        <title>CS Repository HP</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="1st Graded Exercise">
@@ -10,32 +10,117 @@
         <meta name="author" content="HA Comia">
         <link rel="stylesheet" href="styles.css">
         <style>
-          li{
-            color:azure;
+          .header {
+            background-color: rgb(59, 145, 167);
+            color: white;
+            font-weight: bold;
+            width: 100%;
+            padding-left: 2%;
           }
+          a {
+            text-decoration: none;
+          }
+
+          .dropbtnq2 {
+              background-color: rgb(94, 179, 200);
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+          }
+          
+          .dropdownq2 {
+            position: relative;
+            display: inline-block;
+          }
+
+          .dropdown-contentq2 {
+              display: none;
+              position: absolute;
+              background-color: rgb(255, 255, 255);
+              min-width: 110px;
+              z-index: 1;
+          }
+
+          .dropdown-contentq2 a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+          }
+
+          .dropdown-content a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+          }
+
+          .dropbtn {
+              background-color: rgb(94, 179, 200);
+              color: white;
+              padding: 16px;
+              font-size: 16px;
+              border: none;
+          }
+          
+          .dropdown {
+            position: relative;
+            display: inline-block;
+          }
+
+          .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: rgb(255, 255, 255);
+              min-width: 110px;
+              z-index: 1;
+          }
+
+          .dropdown-content a {
+            color: black;
+            padding: 12px;
+            text-decoration: none;
+            display: block;
+          }
+
+          h2 {
+            display: inline;
+            font-size: 30px;
+            font-weight: bold;
+          }
+
+        .dropdown:hover .dropdown-content {display: block;}
+        .dropdownq2:hover .dropdown-contentq2 {display: block;}
+        .dropdown-content a:hover {background-color: #e4e8ea;}
+        .dropdown-contentq2 a:hover {background-color: #e4e8ea;}
         </style>
-        <title>Portfolio - Q2</title>
-        <style>
-          li{
-            color:azure;
-          }
-        </style>"
+        <title>Repository</title>
       </div>
     </head>
-    <body style = "background-color: black;">
+    <body style = "background-color: rgb(242, 241, 239);">
       <section class="w3-container">
-      <h1 style="text-align: center; font-family:'Times New Roman', Times, serif; color:azure"> ╰┈➤ Links to Comia's work ⋆.˚</h1>
-      <hr>
-      <nav>
-        <ul>
-          <li><a href="./public/2Q1GBeComia.html"> First Graded</a> </li>
-          <li><a href="./public/2Q1GHome_Page.html"> 1st Graded - Home Page</a></li>
-          <li><a href="./public/Q21NGBeComia.html">First Non Graded</a></li>
-          <li><a href="./public/2Q2GBeComia.html"> Second Graded </a> </li>
-          <li><a href="#"> Third Graded </a> </li>
-          <li><a href="https://github.com/Liuz0429/WDProjBerylliumCabreraComia.git"> Access to Project </a> </li>
-        </ul>
-      </nav>
+      <h1 class="header">Portfolio</h1>
+
+        <div class="dropdownq2">
+          <button class="dropbtnq2">Quarter 2</button>
+          <div class="dropdown-contentq2">
+            <a href="./public/2Q1GBeComia.html">1st G</a>
+            <a href="./public/2Q2GBeComia.htm">2nd G</a>
+            <a href="./public/Q21NGBeComia.html">1st NG</a>
+            <a href="https://github.com/Liuz0429/WDProjBerylliumCabreraComia.git">Project</a>
+        </div>
+
+        <div class="dropdown">
+          <button class="dropbtn">Quarter 3</button>
+          <div class="dropdown-content">
+            <a href="#">1st G</a>
+            <a href="https://liuz0429.github.io/WDProjBerylliumCabreraComia/">Project</a>
+        </div>
+
+        <img src="../assets/raya.JPG " alt="raya" style="width: 55px; height: 55px; margin-top: -5px">
+        
+        <h2>Hiraya Comia</h2> 
       </section>
     </body>
   </html>
