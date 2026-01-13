@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Q3 2nd Graded Exercise">
+    <meta name="keywords" content="HTML Forms">
+    <meta name="author" content="AL Mendoza">
+    <title>Sample Form</title>
+    <!-- updated external css link to show how to share it between repository -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../../styles.css" />
+    <link rel="icon" href="../../assets/pshslogo.png" sizes="32x32" type="image/png">
+    <script src="script.js" defer></script>
+   <style>
+    html {
+        background-color: rgb(255, 255, 255);
+    }
+    body{
+        padding: 25px;
+        font-family: arial;
+        }
+
+        .title {
+            color: #5C6AC4;
+        }
+
+        fieldset:nth-child(2) {
+             margin-top: 20px;
+        }
+
+        fieldset {
+            color: rgb(0, 0, 0);
+            width: 60%;
+            margin-left: 20%;
+        }
+
+        legend {
+            background-color: rgb(128, 171, 199);
+            color: rgb(255, 255, 255);
+            padding: 5px;
+        }
+        label {
+             margin: 5%;
+        }
+        .header {
+            background-color: rgb(128, 171, 199);
+            color: white;
+            width: auto;
+            height: 60px;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+        .navbar {
+            background-color: rgb(128, 171, 199);
+            height: 20px;
+            padding: 10px;
+            color: white;
+        }
+
+        input:focus {
+            outline: 2px solid rgb(128, 171, 199);
+        }
+    </style>
+  </head>
+  <body>
+     <header>
+        <div>
+            <h1 class="header">
+                Sample Use of HTML Form    
+            </h1>
+        </div>
+        <nav class="navbar">
+            <a href="../../index.html" style="margin-right: 2%;"> Home </a>
+            <a href="registered.html"> Show Saved Accounts </a>
+        </nav>
+    </header>
+    <section>
+      <h1 class="title" style="margin-left: 20%; color: white;">Sign-up Page</h1>
+      <form id="dForm" action="registered.html" method="get">
+            <fieldset>
+                <legend>Your Credentials</legend><br/>
+                <label> Full Name : 
+                  <input type="text" name="uname" id="uname" required onblur />
+                </label><br/><br/>
+                <label> Student ID :
+                  <input type="numerical" name="ID" id="id" required onblur />
+                </label><br/><br/>
+                <label> Date Of Birth :
+                  <input type="date" name="dob" id="dob" required onblur />
+                </label><br/><br/>
+                <label> Email Address : 
+                  <input type="text" name="email" id="email" required onblur />
+                </label><br/><br/>
+            </fieldset>
+            <fieldset>
+                <label> Mobile Phone : 
+                  <input type="text" name="uname" id="uname" required onblur />
+                </label><br/><br/>
+                <label> Recidency Type :
+                  <input type="radio" name="gender" value="Intern" /> Intern
+                  <input type="radio" name="gender" value="Extern" /> Extern
+                </label><br/><br/>
+
+                <label>Preferred Organization : 
+                    <select name="org" id="org" required onblur>
+                        <option value="">Select Organization</option>
+                        <option value="kislap">Kislap (volleyball)</option>
+                        <option value="exposure">Exposure (photography)</option>
+                        <option value="invictus">Invictus (debate)</option>
+                        <option value="likha">Likha (art)</option>
+                        <option value="ellipsis">Ellipsis (literature)</option>
+                    </select>
+                </label><br/><br/>
+
+                <label>Grade Level : 
+                    <select name="grade" id="grade" required onblur>
+                        <option value="">Select Grade Lvl</option>
+                        <option value="7">Grade 7</option>
+                        <option value="8">Grade 8</option>
+                        <option value="9">Grade 9</option>
+                        <option value="10">Grade 10</option>
+                        <option value="11">Grade 11</option>
+                        <option value="12">Grade 12</option>
+                    </select>
+                </label> <br/><br/>
+
+                <label> 
+                  <input type="checkbox" name="dp" id="dp" value="true" /> 
+                  Agree to Data Privacy Policy
+                </label><br/><br/>
+                <label> Why do you want to join? :
+
+                  <textarea name="reason" id="about">
+                    
+                  </textarea>
+                </label><br/><br/>
+                
+                
+              </fieldset>  
+              <fieldset>
+                <legend>Action Buttons</legend>
+                <button type="submit"> Accept </button>
+                <input type="reset" value=" Clear " />
+              </fieldset> 
+      </form>
+    </section>
+    <script src="q3e3script.js"></script>
+  </body>
+</html>
