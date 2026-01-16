@@ -44,7 +44,7 @@
              margin: 5%;
         }
         .header {
-            background-color: rgb(128, 171, 199);
+            background-color: rgb(46, 103, 141);
             color: white;
             width: auto;
             height: 60px;
@@ -61,6 +61,11 @@
 
         input:focus {
             outline: 2px solid rgb(128, 171, 199);
+        }
+        
+        a {
+          text-decoration: none;
+          color: white;
         }
     </style>
   </head>
@@ -82,21 +87,21 @@
             <fieldset>
                 <legend>Your Credentials</legend><br/>
                 <label> Full Name : 
-                  <input type="text" name="uname" id="uname" required onblur />
+                  <input type="text" name="uname" id="uname" required onblur="check(this)" />
                 </label><br/><br/>
                 <label> Student ID :
-                  <input type="numerical" name="ID" id="id" required onblur />
+                  <input type="numerical" name="ID" id="id" required onblur="check(this)" />
                 </label><br/><br/>
                 <label> Date Of Birth :
-                  <input type="date" name="dob" id="dob" required onblur />
+                  <input type="date" name="dob" id="dob" required onblur="check(this)" />
                 </label><br/><br/>
                 <label> Email Address : 
-                  <input type="text" name="email" id="email" required onblur />
+                  <input type="text" name="email" id="email" required onblur="check(this)" />
                 </label><br/><br/>
             </fieldset>
             <fieldset>
                 <label> Mobile Phone : 
-                  <input type="text" name="uname" id="uname" required onblur />
+                  <input type="text" name="uname" id="uname" required onblur="check(this)" />
                 </label><br/><br/>
                 <label> Recidency Type :
                   <input type="radio" name="gender" value="Intern" /> Intern
@@ -104,7 +109,7 @@
                 </label><br/><br/>
 
                 <label>Preferred Organization : 
-                    <select name="org" id="org" required onblur>
+                    <select name="org" id="org" required onblur="check(this)">
                         <option value="">Select Organization</option>
                         <option value="kislap">Kislap (volleyball)</option>
                         <option value="exposure">Exposure (photography)</option>
@@ -115,7 +120,7 @@
                 </label><br/><br/>
 
                 <label>Grade Level : 
-                    <select name="grade" id="grade" required onblur>
+                    <select name="grade" id="grade" required onblur="check(this)">
                         <option value="">Select Grade Lvl</option>
                         <option value="7">Grade 7</option>
                         <option value="8">Grade 8</option>
