@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+
+    <body>
+        <h2>List of Students Who Signed Up</h2>
+        <a href="Q3_2GBEComia.html"> Back to Sign Up</a>
+        <br/><br/>
+        
+        <label> Select Your Club
+            <select id="Cfilter">
+                <option value="ALL">ALL</option>
+                <option value="kislap">Kislap</option>
+                <option value="expo">Exposure</option>
+                <option value="invic">Invictus</option>
+                <option value="likha">Likha</option>
+                <option value="ellip">Ellipsis</option>
+            </select>
+        </label>
+
+        <p id="total"></p>
+        <div id="table"></div>
+
+        <script>
+            let signups = JSON.parse(localStorage.getItem("signups")) || [];
+            let filter = document.getElementById("Cfilter");
+            let table = document.getElementById("table");
+            let total = document.getElementById("total");
+
+            if (signups.length === 0) {
+                table.innerHTML = "<b>No sign ups.</b>"
+                table.textContent = "";
+            }
+
+            let clubs = [...new Set(signups.map(s => s.club))]
+            clubs.forEach(club => {
+                let opt = document.createElement("option");
+                opt.value = club;
+                opt.textContent = club;
+                filter.appendChild(opt);
+            });
+
+            function displayTable(list) {
+                of (list.length === 0) {
+                    table.innerHML = "No Sign Ups";
+                    total.textContent = "Total Signups: 0";
+                    return
+                }
+
+                let html = `
+                <table>
+                    <tr>
+                        <th>Club</th>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        <th>Grade lvl</th>
+                        <th>Email</th>
+                        <th>Mobile #</th>
+                        <th>Residence</th>
+                    </tr>`;
+
+                list.forEach(s => {
+                    html += `
+                        <tr>
+                            <td>${s.club}</td>
+                            <td>${s.id}</td>
+                            <td>${s.name}</td>
+                            <td>${s.grade}</td>
+                            <td>${s.email}</td>
+                            <td>${s.mobile}</td>
+                            <td>${s.residence}</td>
+                        </tr>`;
+                });
+
+                html += "</table>";
+                table.innerHTML = html;
+                total.textContent = "Total Signups: " + list.length;
+            }
+            
+            displayTable(signups);
+
+            filter.onchange = function() {
+                if (this.value === "ALL") {
+                    displayTable(signups);
+                }
+
+                else {
+                    displayTable(signups.filter(s => s.club === this.value));
+                }
+            }
+        </script>
+    </body>
+</html>
