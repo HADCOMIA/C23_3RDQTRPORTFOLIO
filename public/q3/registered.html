@@ -24,24 +24,42 @@
         width: 100%;
     }
     table, th, td {
-        border: 1px solid white;
+        border: 1px solid rgb(189, 208, 224);
         padding: 5px;
+    }
+
+    .header {
+            background-color: rgb(46, 103, 141);
+            color: white;
+            width: auto;
+            height: 60px;
+            padding-top: 20px;
+            padding-left: 10px;
+        }
+
+    .navbar {
+        background-color: rgb(128, 171, 199);
+        height: 20px;
+        padding: 10px;
+        color: white;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
     }
     </style>
   </head>
   <body>
      <header>
         <div>
-            <img src="../../assets/pshslogo.png" alt="pshs logo" 
-               title="The Official Logo" width="50px" height="50px" />
-            <h1>
+            <h1 class="header">
                 Show List of Accounts    
             </h1>
-            <h3>by AL Mendoza </h3>
         </div>
         <nav class="navbar">
             <a href="../../index.html"> Home </a>
-            <a href="q3ge2Mendoza.html"> Create Account </a>
+            <a href="./Q3_2GBEComia.html"> Create Account </a>
         </nav>
     </header>
     <section>
@@ -56,7 +74,7 @@
         else {
             
             accountList = JSON.parse(acctString) // converts string into the correct data type in this case object    
-            rowString = "<tr><th>Username</th><th>DOB</th><th>Gender</th><th>DP Check</th><th>About</th></tr>";
+            rowString = "<tr><th>Username</th><th>DOB</th><th>Residency</th><th>DP Check</th><th>About</th></tr>";
             // results.innerHTML = ""  // resets the table
             console.log(accountList)
             for (let key in accountList) {
