@@ -7,9 +7,99 @@
         <meta name="description" content="1st Graded Exercise">
         <meta name="keywords" content="Movie Rating">
         <meta name="author" content="HA Comia">
+
+        <style>
+            label {
+                font-weight: bold;
+                margin-left: 2rem;
+                color:rgb(61, 61, 61);
+            }
+
+            fieldset  {
+                width: 40%;
+                margin: auto;
+            }
+
+            h3 {
+                font-weight: bold;
+                text-align: center
+            }
+
+            input  {
+                width: 90%;
+                margin-left: 2rem;
+            }
+
+            select {
+                width: 90%;
+                height: 2rem;
+                margin-left: 2rem;
+                font-weight: lighter;
+            }
+
+            button {
+                display: block;
+                margin: auto;
+                width: 90%;
+                background-color:rgb(30, 138, 210);
+                border: none;
+                height: 2.5rem;
+                border-radius: 0.5rem;
+                color: white;
+            }
+
+            .centering {
+                display: flex;
+                align-content: center;
+                height: 100vh;
+            }
+
+            .star {
+                display: flex;
+                align-items: left;
+            }
+        </style>
     </head>
 
     <body>
-        wghwhbvsbvfs
+        <form id="dForm">
+            <div class="centering">
+                <fieldset>
+                    <h3>Add A Movie</h3>
+                    <label>Title </br> <input type="text" id="title"></label> </br></br>
+                    <label>Year </br> <input type="text" id="year"></label> </br></br>
+                    <label>Genre </br> 
+                        <select name="Genre" id="genre">
+                            <option value="">Select Genre</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="romance">Romance</option>
+                            <option value="action">Action</option>
+                            <option value="scifi">Science Fiction</option>
+                            <option value="mysery">Mystery</option>
+                        </select>
+                    </label> </br></br>
+                    
+                    <label>Rating</label></br></br>
+                    <div class="container">
+                        <div class="star">
+                            <input type="radio" name="rating" id="5">
+                            <label for="5"></label>
+                            <input type="radio" name="rating" id="4">
+                            <label for="4"></label>
+                            <input type="radio" name="rating" id="3">
+                            <label for="3"></label>
+                            <input type="radio" name="rating" id="2">
+                            <label for="2"></label>
+                            <input type="radio" name="rating" id="1">
+                            <label for="1"></label>
+                        </div>
+                    </div></br></br>
+
+                    <button>Add Movie</button>
+                    
+                    <h3>Movie List</h3>
+                </fieldset>
+            </div>
+        </form>
     </body>
 </html>
