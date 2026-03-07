@@ -7,7 +7,7 @@
         <meta name="description" content="1st Graded Exercise">
         <meta name="keywords" content="Movie Rating">
         <meta name="author" content="HA Comia">
-
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             label {
                 font-weight: bold;
@@ -57,7 +57,27 @@
             .star {
                 display: flex;
                 align-items: left;
+                color: white;
             }
+
+            .star input {
+                display: none;
+                font-size: 100px;
+            }
+
+            .star-custom {
+                color: rgb(255, 234, 0);
+            }
+
+            .star input + label {
+                font-size: 30px;
+                cursor: pointer;
+            }
+
+            .star input:checked + label ~ label {
+                color: grey;
+            }
+
         </style>
     </head>
 
@@ -82,16 +102,16 @@
                     <label>Rating</label></br></br>
                     <div class="container">
                         <div class="star">
-                            <input type="radio" name="rating" id="5">
-                            <label for="5"></label>
-                            <input type="radio" name="rating" id="4">
-                            <label for="4"></label>
-                            <input type="radio" name="rating" id="3">
-                            <label for="3"></label>
-                            <input type="radio" name="rating" id="2">
-                            <label for="2"></label>
-                            <input type="radio" name="rating" id="1">
-                            <label for="1"></label>
+                                <input type="radio" name="rating" id="5">
+                                <label for="5" class="fa fa-star star-custom"></label>
+                                <input type="radio" name="rating" id="4">
+                                <label for="4" class="fa fa-star star-custom"></label>
+                                <input type="radio" name="rating" id="3">
+                                <label for="3" class="fa fa-star star-custom"></label>
+                                <input type="radio" name="rating" id="2">
+                                <label for="2" class="fa fa-star star-custom"></label>
+                                <input type="radio" name="rating" id="1">
+                                <label for="1" class="fa fa-star star-custom"></label>
                         </div>
                     </div></br></br>
 
