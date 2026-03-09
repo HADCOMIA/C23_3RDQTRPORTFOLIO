@@ -18,6 +18,7 @@
             fieldset  {
                 width: 40%;
                 margin: auto;
+                margin-top: 5rem;
             }
 
             h3 {
@@ -28,6 +29,7 @@
             input  {
                 width: 90%;
                 margin-left: 2rem;
+                font-weight: lighter;
             }
 
             select {
@@ -78,6 +80,11 @@
                 color: grey;
             }
 
+            .listdisp {
+                width: 90%;
+                margin: auto;
+            }
+
         </style>
     </head>
 
@@ -90,7 +97,7 @@
                     <label>Year </br> <input type="text" id="year"></label> </br></br>
                     <label>Genre </br> 
                         <select name="Genre" id="genre">
-                            <option value="">Select Genre</option>
+                            <option value="" disabled selected hidden>Select genre...</option>
                             <option value="comedy">Comedy</option>
                             <option value="romance">Romance</option>
                             <option value="action">Action</option>
@@ -115,9 +122,14 @@
                         </div>
                     </div></br></br>
 
-                    <button>Add Movie</button>
+                    <button type="submit">Add Movie</button>
                     
                     <h3>Movie List</h3>
+
+                    <fieldset class="listdisp">
+                        <div id="listMovies"></div>
+                        <script src="script.js"></script>
+                    </fieldset>
                 </fieldset>
             </div>
         </form>
