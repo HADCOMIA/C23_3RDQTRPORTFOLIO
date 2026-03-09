@@ -21,34 +21,6 @@
             text-decoration: none;
           }
 
-          .dropbtnq2 {
-              background-color: rgb(94, 179, 200);
-              color: white;
-              padding: 16px;
-              font-size: 16px;
-              border: none;
-          }
-          
-          .dropdownq2 {
-            position: relative;
-            display: inline-block;
-          }
-
-          .dropdown-contentq2 {
-              display: none;
-              position: absolute;
-              background-color: rgb(255, 255, 255);
-              min-width: 110px;
-              z-index: 1;
-          }
-
-          .dropdown-contentq2 a {
-            color: black;
-            padding: 12px;
-            text-decoration: none;
-            display: block;
-          }
-
           .dropdown-content a {
             color: black;
             padding: 12px;
@@ -59,7 +31,10 @@
           .dropbtn {
               background-color: rgb(94, 179, 200);
               color: white;
-              padding: 16px;
+              padding-left: 10.8rem;
+              padding-right: 10.8em;
+              padding-top: 16px;
+              padding-bottom: 16px;
               font-size: 16px;
               border: none;
           }
@@ -79,7 +54,10 @@
 
           .dropdown-content a {
             color: black;
-            padding: 12px;
+            padding-left: 12rem;
+            padding-right: 12rem;
+            padding-top: 16px;
+            padding-bottom: 16px;
             text-decoration: none;
             display: block;
           }
@@ -90,19 +68,8 @@
             font-weight: bold;
           }
 
-          .filler {
-              display: inline;
-              background-color: rgb(94, 179, 200);
-              padding: 19px;
-              padding-right: 656%;
-              border: none;
-              margin-left: 5px;
-          }
-
         .dropdown:hover .dropdown-content {display: block;}
-        .dropdownq2:hover .dropdown-contentq2 {display: block;}
         .dropdown-content a:hover {background-color: #e4e8ea;}
-        .dropdown-contentq2 a:hover {background-color: #e4e8ea;}
         
         </style>
         <title>Repository</title>
@@ -112,13 +79,14 @@
       <section class="w3-container">
       <h1 class="header">Portfolio</h1>
 
-        <div class="dropdownq2">
-          <button class="dropbtnq2">Quarter 2</button>
-          <div class="dropdown-contentq2">
+        <div class="dropdown">
+          <button class="dropbtn">Quarter 2</button>
+          <div class="dropdown-content">
             <a href="./public/2Q1GBeComia.html">1st G</a>
             <a href="./public/2Q2GBeComia.htm">2nd G</a>
             <a href="./public/Q21NGBeComia.html">1st NG</a>
             <a href="https://github.com/Liuz0429/WDProjBerylliumCabreraComia.git">Project</a>
+          </div>
         </div>
 
         <div class="dropdown">
@@ -129,7 +97,13 @@
           </div>
         </div>
 
-        <div class="filler"></div>
+        <div class="dropdown">
+          <button class="dropbtn">Quarter 4</button>
+          <div class="dropdown-content">
+            <a href="./public/q4/q41gBerylliumCOMIA.html">1st G</a>
+            <a href="https://liuz0429.github.io/WDProjBerylliumCabreraComia/">Project</a>
+          </div>
+        </div>
 
       </section>
     </body>
