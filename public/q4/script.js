@@ -25,13 +25,22 @@ form.addEventListener('submit', function(event) {
     }
 });
 
+let star = rating;
+var dispstar = 0;
+
+for (let i = 0; i < star.length; i++){
+    dispstar += "★";
+}
+
+movieList.rating = dispstar;
+
 function dispMovies(movieList) {
     let dispList = "";
     let listMovies = document.getElementById("listMovies");
 
     for (let movie=0; movie < movieList.length; movie++) {
         dispList += `<p>${movieList[movie].title}<span> (</span>${movieList[movie].date}<span>)</span>
-                    ${movieList[movie].genre}<span>, Rating: </span> ${movieList[movie].rating}</p>`;
+                    ${movieList[movie].genre}<span>, Rating: </span> ${movieList[movie].rating} </p>`;
     }
 
     listMovies.innerHTML = dispList;
