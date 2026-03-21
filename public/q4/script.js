@@ -65,6 +65,15 @@ form.addEventListener('submit', function(event) {
     }
 });
 
+let star = rating;
+var dispstar = 0;
+
+for (let i = 0; i < star.length; i++){
+    dispstar += "★";
+}
+
+movieList.rating = dispstar;
+
 function dispMovies(movieList) {
     let dispList = "";
     let listMovies = document.getElementById("listMovies")
