@@ -100,8 +100,13 @@ is positioned relative to the viewport.
 
 - Challenge: 
     * What changes that you have to do on the code that will position .notice box on the top right corner of the .content box? Please write the code on paper as well (both html and css on the part of .notice and .content).
+      - I changed the css top & bottom offset values to 66 px and 430px respectively
+
     * Try to change the position of .content to relative then to fixed. What do you observed each time?
+      - I noticed that when I use fixed, .content stays on top of all the other elements (including the footer) and stays stuck in the same poisition on the page despite scrolling. On the other hand, when I use relative, a huge gap between the top of .content will be created due to the preservation of its original position and the offset values.
+
     * What do you observe on about the effect of z-index on .notice and .content boxes?
+      - The element with the higher z-index will always come out on top of the element/s with lower z-indexes. In the case of .notice and .content, as .notice had a higher z-index, it went on top of .content.
 
 3. Please answer the following reflection questions (15 minutes)
 
@@ -119,4 +124,4 @@ is positioned relative to the viewport.
       * Fixed stays on the same spot on the page regardless of the user's scroll.
 
     d. If you were designing a webpage for a school event, how might you use positioning to highlight important information? Please give concrete examples.
-      * I would use fixed, sticky, and absolute to put important information on top of less important ones.
+      * I would use fixed, sticky, and absolute positioning to put important information, such as notices regarding schedule changes, event venues, and important guidlines and reminders (e.g., dedicated uniform/attire for that specific day), on top. 
