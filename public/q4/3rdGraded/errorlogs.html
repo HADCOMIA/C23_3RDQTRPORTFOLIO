@@ -58,13 +58,13 @@
         <td> 1 </td> 
         <td> line 1 JS </td> 
         <td> No closing bracket for function plotPoint()</td>
-        <td> Added closing bracket</td>
+        <td> Added closing bracket on line 26</td>
       </tr>
       <tr>
         <td> 2 </td> 
         <td> line 1 JS</td> 
         <td> No parameters for the function to recieve the inputted points</td>
-        <td> Added parameters</td>
+        <td> Added parameters x0, y0, x, y</td>
       </tr>
       <tr>
         <td> 3 </td> 
@@ -73,10 +73,10 @@
         <td> Changed to display: inline-flex for space-around</td>
       </tr>
       <tr>
-        <td> 4 </td> 
-        <td> line 28 CSS</td> 
-        <td> Uses position: static (nav bar must not scroll with the page)</td>
-        <td> Changed position to fixed</td>
+        <td> 4 </td>
+        <td> line 29 CSS</td>
+        <td> Nav was not on the first line of the browser. </td>
+        <td> Added top property and made it top: 0;</td>
       </tr>
       <tr>
         <td> 5 </td> 
@@ -85,34 +85,34 @@
         <td> Deleted the space</td>
       </tr>
       <tr>
-        <td> 6 </td> 
-        <td> </td> 
-        <td> </td>
-        <td> </td>
+        <td> 6 </td>
+        <td> line 92 CSS</td>
+        <td> The path linking to the sprites.png image was not defined properly. It was previously only sprites.png, but that would not work since sprites.png was not in the same folder.</td>
+        <td> Changed sprites.png to images/sprites.png</td>
       </tr>
       <tr>
-        <td> 7 </td> 
-        <td> </td> 
-        <td> </td>
-        <td> </td>
+        <td> 7 </td>
+        <td> line 7 JS</td>
+        <td> CSS property left could not be changed as there was no period between style and left.</td>
+        <td> Changed point.styleleft to point.style.left</td>
       </tr>
       <tr>
-        <td> 8 </td> 
-        <td> </td> 
-        <td> </td>
-        <td> </td>
+        <td> 8 </td>
+        <td> line 8 JS</td>
+        <td> CSS property right could not be changed as there was no period between style and right.</td>
+        <td> Changed point.styleright to point.style.right</td>
       </tr>
       <tr>
-        <td> 9 </td> 
-        <td> </td> 
-        <td> </td>
-        <td> </td>
+        <td> 9 </td>
+        <td> line 54 CSS</td>
+        <td> Point's position was default (static), thus making the left and right property changes from the JS file be obsolete.</td>
+        <td> Changed point's position to position: absolute</td>
       </tr>
       <tr>
-        <td> 10 </td> 
-        <td> </td> 
-        <td> </td>
-        <td> </td>
+        <td> 10 </td>
+        <td> line 28 CSS</td>
+        <td> Nav's position was default (static), making it scroll with the rest of the content.</td>
+        <td> Changed nav's position to position: fixed</td>
       </tr>
      
     </table>
